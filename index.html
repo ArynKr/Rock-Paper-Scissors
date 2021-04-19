@@ -24,22 +24,22 @@
     </header>
 
     <main class="container text-center">
-      <h4 class="text-danger pt-2">ROUND 1</h4>
+      <h4 class="round-count text-danger pt-2">ROUND 1</h4>
 
       <div class="row">
         <div class="col-4 text-center">
           <p class="win text-muted mb-1">WIN</p>
-          <p class="text-dark fw-bold fs-2">1</p>
+          <p class="win-count text-dark fw-bold fs-2">0</p>
         </div>
 
         <div class="col-4 text-center">
           <p class="mb-1 tie text-muted">TIE</p>
-          <p class="text-dark fw-bold fs-2">1</p>
+          <p class="tie-count text-dark fw-bold fs-2">0</p>
         </div>
 
         <div class="col-4 text-center">
           <p class="mb-1 lose text-muted">LOSE</p>
-          <p class="text-dark fw-bold fs-2">1</p>
+          <p class="lose-count text-dark fw-bold fs-2">0</p>
         </div>
       </div>
 
@@ -47,20 +47,20 @@
         <div class="col-12 my-2 box">
           <span class="text-uppercase fs-6 fw-bold">Computer</span>
           <div class="hand hand-computer">
-            <img src="./images/none.7969bf7a.png" alt="" />
+            <img class="computer-img" src="./images/none.png" alt="" />
           </div>
         </div>
 
         <div class="col-12 my-2 box">
           <div class="hand hand-human">
-            <img src="./images/none.7969bf7a.png" alt="" />
+            <img class="human-img" src="./images/none.png" alt="" />
           </div>
           <span class="text-uppercase fs-6 fw-bold">Human</span>
         </div>
       </div>
 
       <div class="container choice-box">
-        <button class="mx-2">
+        <button class="mx-2" id="rock">
           <span>
             <svg viewBox="0 0 60 60">
               <g fill="none" fill-rule="evenodd">
@@ -74,7 +74,7 @@
             </svg>
           </span>
         </button>
-        <button class="mx-2">
+        <button class="mx-2" id="paper">
           <span>
             <svg viewBox="0 0 60 60">
               <g fill="none" fill-rule="evenodd">
@@ -88,7 +88,7 @@
             </svg>
           </span>
         </button>
-        <button class="mx-2">
+        <button class="mx-2" id="scissors">
           <span>
             <svg viewBox="0 0 60 60">
               <g fill="none" fill-rule="evenodd">
@@ -113,5 +113,6 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+    <script src="./app.js"></script>
   </body>
 </html>
